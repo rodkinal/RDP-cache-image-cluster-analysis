@@ -1,4 +1,3 @@
-v
 ## 📋 Descripción
 Sistema unificado que analiza imágenes por características de color, muestra gráficos de análisis y permite al usuario elegir el número óptimo de clusters para organizar las imágenes automáticamente.
 
