@@ -160,7 +160,7 @@ final_tsne_clusters.png           # Visualización t-SNE con clusters finales
 | `--tsne-samples N` | Máx. puntos para t-SNE (default: 5000) | `--tsne-samples 10000` |
 | `--help` | Muestra ayuda completa | `--help` |
 
-## � Normalización de Datos
+## 🗜️ Normalización de Datos
 
 ### ¿Por qué es Crucial la Normalización?
 - **Diferentes escalas**: Las características RGB (0-255) vs HSV (0-1) tienen rangos muy diferentes
