@@ -156,8 +156,8 @@ final_tsne_clusters.png           # Visualización t-SNE con clusters finales
 | `data_folder` | **Requerido**. Ruta a la carpeta con imágenes | `Raw_data` |
 | `--max-images N` | Limita imágenes por carpeta (opcional) | `--max-images 500` |
 | `--no-copy` | Mueve archivos en lugar de copiarlos | `--no-copy` |
-| `--only-analysis` | **🎯 NUEVO**: Solo análisis (sin organizar carpetas) | `--only-analysis` |
-| `--tsne-samples N` | **🎯 NUEVO**: Máx. puntos para t-SNE (default: 5000) | `--tsne-samples 10000` |
+| `--only-analysis` | Solo análisis (sin organizar carpetas) | `--only-analysis` |
+| `--tsne-samples N` | Máx. puntos para t-SNE (default: 5000) | `--tsne-samples 10000` |
 | `--help` | Muestra ayuda completa | `--help` |
 
 ## � Normalización de Datos
