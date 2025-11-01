@@ -1,5 +1,31 @@
+# 🎯 SISTEMA COMPLETO DE CLUSTERING DE IMÁGENES
+
 ## 📋 Descripción
 Sistema unificado que analiza imágenes por características de color, muestra gráficos de análisis y permite al usuario elegir el número óptimo de clusters para organizar las imágenes automáticamente.
+
+## 🔗 Integración con Herramientas Forenses
+
+### 📡 Flujo de Trabajo con BMC-tool y RDPCacheStitcher
+Esta herramienta se integra perfectamente en análisis forenses de conexiones RDP:
+
+1. **[BMC-tool.py](https://github.com/ANSSI-FR/bmc-tools)** - Extrae y procesa cachés de bitmap RDP
+   - Genera tiles de imágenes desde cachés RDP
+   - Crea estructura de carpetas con tiles extraídos
+
+2. **🎯 Sistema de Clustering** - Clasifica tiles por similitud visual
+   - Agrupa tiles similares usando características de color
+   - Identifica patrones y contenido recurrente
+   - Separa diferentes tipos de contenido visual
+
+3. **[RDPCacheStitcher](https://github.com/BSI-Bund/RdpCacheStitcher)** - Reconstruye pantallas completas
+   - Usa los clusters organizados para reconstrucción más eficiente  
+   - Mejora la precisión de stitching con tiles pre-clasificados
+
+### 💡 Casos de Uso Forenses
+- **Análisis de sesiones RDP**: Identificar diferentes aplicaciones y ventanas
+- **Clasificación de contenido**: Separar texto, imágenes, interfaces
+- **Detección de patrones**: Encontrar actividades recurrentes o sospechosas
+- **Optimización de reconstrucción**: Pre-procesar tiles para mejor stitching
 
 ## 🚀 Uso Básico
 
@@ -151,7 +177,7 @@ final_tsne_clusters.png           # Visualización t-SNE con clusters finales
    📊 Rango post-normalización: [-3.86, 2.94]
 ```
 
-## �📊 Características Extraídas
+## 🏷️ Características Extraídas
 
 El sistema extrae **23 características** por imagen:
 
@@ -315,12 +341,18 @@ Se genera **DESPUÉS** de seleccionar el número de clusters:
 - **Muchos clusters pequeños** = datos muy diversos
 - **Pocos clusters grandes** = patrones dominantes claros## 🎯 Casos de Uso
 
+### 🔍 **Análisis Forense Digital**
+- **Cachés RDP**: Procesar salida de [BMC-tool.py](https://github.com/ANSSI-FR/bmc-tools) para clasificar tiles
+- **Reconstrucción de pantallas**: Pre-procesar tiles para [RDPCacheStitcher](https://github.com/BSI-Bund/RdpCacheStitcher)
+- **Análisis de sesiones**: Identificar diferentes aplicaciones y actividades
+- **Detección de patrones**: Encontrar comportamientos recurrentes o sospechosos
+
+### 🎮 **Multimedia y Entretenimiento**
 - **Screenshots de juegos**: Separar por tipo de pantalla/nivel
-- **Imágenes médicas**: Agrupar por características visuales
-- **Fotografías**: Organizar por paleta de colores
-- **Documentos escaneados**: Separar por tipo de contenido
 - **Arte digital**: Clasificar por estilo cromático
+- **Fotografías**: Organizar por paleta de colores
 
----
-
-**¡El sistema está listo para usar! 🚀**
+### 🏥 **Aplicaciones Profesionales**
+- **Imágenes médicas**: Agrupar por características visuales
+- **Documentos escaneados**: Separar por tipo de contenido
+- **Control de calidad**: Clasificar productos por apariencia visual
