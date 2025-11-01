@@ -27,6 +27,10 @@ Esta herramienta se integra perfectamente en análisis forenses de conexiones RD
 - **Detección de patrones**: Encontrar actividades recurrentes o sospechosas
 - **Optimización de reconstrucción**: Pre-procesar tiles para mejor stitching
 
+<img width="3547" height="2362" alt="final_tsne_clusters" src="https://github.com/user-attachments/assets/7221f940-5ab6-4206-ac4a-86da4656b271" />
+<img width="4471" height="1766" alt="cluster_analysis" src="https://github.com/user-attachments/assets/7e4b701a-b0ab-404f-bc5d-66a8e770033c" />
+
+
 ## 🚀 Uso Básico
 
 ### Comando Principal
